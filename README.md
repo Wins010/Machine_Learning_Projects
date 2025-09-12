@@ -8,16 +8,20 @@ The goal is to **predict a car’s fuel efficiency (MPG)** from its **horsepower
 ## 📂 Project Structure
 
 ```text
-Supervised-Learning/
-└── Linear-Regression/
-    └── Simple-Linear-Regression/
-        ├── data/
-        │   ├── raw/          # original dataset
-        │   └── processed/    # cleaned dataset
-        ├── notebooks/
-        │   ├── 01_EDA.ipynb              # data exploration & cleaning
-        │   └── 02_model_training.ipynb   # regression model & evaluation
-        └── README.md
+slr-auto-mpg/                      # Simple Linear Regression
+│
+├── README.md                      # Project overview, dataset info, instructions
+├── requirements.txt               # Dependencies (pandas, numpy, matplotlib, sklearn, jupyter)
+│
+├── data/
+│   ├── processed/
+│   │   └── auto-mpg-clean.csv     # Cleaned dataset (after handling missing values, preprocessing)
+│   └── raw/
+│       └── auto-mpg.csv           # Original dataset (untouched)
+│
+└── notebooks/
+    ├── 01_EDA.ipynb               # Exploratory Data Analysis (EDA) - distributions, correlations, plots
+    └── 02_model_training.ipynb    # Model training & evaluation - fit SLR, plot regression line, compute metrics
 ```
 
 ---
